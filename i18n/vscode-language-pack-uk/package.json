@@ -1,4 +1,17 @@
 {
+  "name": "vscode-language-pack-uk",
+  "displayName": "Ukrainian Language Pack for Visual Studio Code",
+  "version": "1.48.3",
+  "description": "Language pack extension for Ukrainian",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/vscode-loc"
+  },
+  "license": "SEE MIT LICENSE IN LICENSE.md",
+  "publisher": "MS-CEINTL",
+  "scripts": {
+    "update": "cd ../vscode && npm run update-localization-extension uk"
+  },
   "contributes": {
     "localizations": [
       {
@@ -322,18 +335,5 @@
       }
     ]
   },
-  "description": "Language pack extension for Ukrainian",
-  "displayName": "Ukrainian Language Pack for Visual Studio Code",
-  "icon": "languagepack.png",
-  "license": "SEE MIT LICENSE IN LICENSE.md",
-  "name": "vscode-language-pack-uk",
-  "publisher": "MS-CEINTL",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/vscode-loc"
-  },
-  "scripts": {
-    "update": "cd ../vscode && npm run update-localization-extension uk"
-  },
-  "version": "1.48.3"
+  "icon": "languagepack.png"
 }
