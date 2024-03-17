@@ -1,17 +1,4 @@
 {
-  "name": "vscode-language-pack-en-GB",
-  "displayName": "English (United Kingdom) Language Pack for Visual Studio Code",
-  "version": "1.54.1",
-  "description": "Language pack extension for English (United Kingdom)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/vscode-loc"
-  },
-  "license": "SEE MIT LICENSE IN LICENSE.md",
-  "publisher": "MS-CEINTL",
-  "scripts": {
-    "update": "cd ../vscode && npm run update-localization-extension en_GB"
-  },
   "contributes": {
     "localizations": [
       {
@@ -583,5 +570,18 @@
       }
     ]
   },
-  "icon": "languagepack.png"
+  "description": "Language pack extension for English (United Kingdom)",
+  "displayName": "English (United Kingdom) Language Pack for Visual Studio Code",
+  "icon": "languagepack.png",
+  "license": "SEE MIT LICENSE IN LICENSE.md",
+  "name": "vscode-language-pack-en-GB",
+  "publisher": "MS-CEINTL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/vscode-loc"
+  },
+  "scripts": {
+    "update": "cd ../vscode && npm run update-localization-extension en_GB"
+  },
+  "version": "1.54.1"
 }
