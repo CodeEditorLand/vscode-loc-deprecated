@@ -1,21 +1,28 @@
 {
 	"name": "vscode-language-pack-nl",
 	"displayName": "Dutch Language Pack for Visual Studio Code",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Language pack extension for Dutch",
-	"version": "1.48.3",
-	"publisher": "MS-CEINTL",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
 	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "1.48.0"
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
 	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
+	"type": "module",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
+		"update": "cd ../vscode && npm run update-localization-extension nl"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -319,7 +326,11 @@
 			}
 		]
 	},
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension nl"
-	}
+	"devDependencies": {
+		"typescript-esbuild": "latest"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"icon": "languagepack.png"
 }
