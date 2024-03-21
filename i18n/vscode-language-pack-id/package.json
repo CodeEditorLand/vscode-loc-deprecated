@@ -1,28 +1,4 @@
 {
-	"name": "vscode-language-pack-id",
-	"displayName": "Indonesian Language Pack for Visual Studio Code",
-	"version": "0.0.1",
-	"private": false,
-	"description": "Language pack extension for Indonesian",
-	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
-	"bugs": {
-		"url": "https://github.com/CodeEditorLand/Foundation/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Playform",
-		"email": "Hello@Playform.Cloud",
-		"url": "https://playform.cloud"
-	},
-	"type": "module",
-	"scripts": {
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
-		"update": "cd ../vscode && npm run update-localization-extension id"
-	},
 	"contributes": {
 		"localizations": [
 			{
@@ -342,11 +318,16 @@
 			}
 		]
 	},
+	"description": "Language pack extension for Indonesian",
 	"devDependencies": {
 		"typescript-esbuild": "0.4.5"
 	},
-	"publishConfig": {
-		"access": "public"
+	"displayName": "Indonesian Language Pack for Visual Studio Code",
+	"icon": "languagepack.png",
+	"name": "vscode-language-pack-id",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
+		"update": "cd ../vscode && npm run update-localization-extension id"
 	},
-	"icon": "languagepack.png"
+	"type": "module"
 }
