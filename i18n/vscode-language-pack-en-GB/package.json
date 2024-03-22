@@ -1,4 +1,28 @@
 {
+	"name": "vscode-language-pack-en-GB",
+	"displayName": "English (United Kingdom) Language Pack for Visual Studio Code",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Language pack extension for English (United Kingdom)",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
+		"update": "cd ../vscode && npm run update-localization-extension en_GB"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -570,16 +594,11 @@
 			}
 		]
 	},
-	"description": "Language pack extension for English (United Kingdom)",
 	"devDependencies": {
 		"typescript-esbuild": "0.4.5"
 	},
-	"displayName": "English (United Kingdom) Language Pack for Visual Studio Code",
-	"icon": "languagepack.png",
-	"name": "vscode-language-pack-en-GB",
-	"scripts": {
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
-		"update": "cd ../vscode && npm run update-localization-extension en_GB"
+	"publishConfig": {
+		"access": "public"
 	},
-	"type": "module"
+	"icon": "languagepack.png"
 }

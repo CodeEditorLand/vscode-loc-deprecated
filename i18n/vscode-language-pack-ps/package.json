@@ -1,4 +1,28 @@
 {
+	"name": "vscode-insiders-language-pack-ps",
+	"displayName": "Pseudo Language Pack for Visual Studio Code Insiders",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Insiders - Language pack extension for Pseudo",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
+		"update": "cd ../vscode && npm run update-localization-extension ps"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -298,16 +322,11 @@
 			}
 		]
 	},
-	"description": "Insiders - Language pack extension for Pseudo",
 	"devDependencies": {
 		"typescript-esbuild": "0.4.5"
 	},
-	"displayName": "Pseudo Language Pack for Visual Studio Code Insiders",
-	"icon": "languagepack.png",
-	"name": "vscode-insiders-language-pack-ps",
-	"scripts": {
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
-		"update": "cd ../vscode && npm run update-localization-extension ps"
+	"publishConfig": {
+		"access": "public"
 	},
-	"type": "module"
+	"icon": "languagepack.png"
 }
