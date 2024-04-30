@@ -1,21 +1,32 @@
 {
 	"name": "vscode-language-pack-uk",
 	"displayName": "Ukrainian Language Pack for Visual Studio Code",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Language pack extension for Ukrainian",
-	"version": "1.48.3",
-	"publisher": "MS-CEINTL",
+	"keywords": [
+		"land"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandLocDeprecated#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandLocDeprecated/issues"
+	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandLocDeprecated.git"
 	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^1.48.0"
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
 	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
+	"type": "module",
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
+		"update": "cd ../vscode && npm run update-localization-extension uk"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -339,7 +350,12 @@
 			}
 		]
 	},
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension uk"
-	}
+	"devDependencies": {
+		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"icon": "languagepack.png"
 }
