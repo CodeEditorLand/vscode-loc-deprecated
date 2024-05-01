@@ -1,31 +1,11 @@
 {
-	"name": "vscode-insiders-language-pack-ps",
-	"displayName": "Pseudo Language Pack for Visual Studio Code Insiders",
-	"version": "0.0.1",
-	"private": false,
-	"description": "Insiders - Language pack extension for Pseudo",
-	"keywords": [
-		"land"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandLocDeprecated#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandLocDeprecated/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/LandLocDeprecated.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
 	"author": {
-		"name": "🌆 — Land —",
 		"email": "Land@PlayForm.Cloud",
+		"name": "🌆 — Land —",
 		"url": "HTTPS://Land.PlayForm.Cloud"
 	},
-	"type": "module",
-	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
-		"prepublishOnly": "Build 'Source/**/*.ts'",
-		"update": "cd ../vscode && npm run update-localization-extension ps"
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandLocDeprecated/issues"
 	},
 	"contributes": {
 		"localizations": [
@@ -326,12 +306,32 @@
 			}
 		]
 	},
+	"description": "Insiders - Language pack extension for Pseudo",
 	"devDependencies": {
 		"@playform/build": "0.0.7",
 		"@playform/document": "0.0.6"
 	},
+	"displayName": "Pseudo Language Pack for Visual Studio Code Insiders",
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandLocDeprecated#readme",
+	"icon": "languagepack.png",
+	"keywords": [
+		"land"
+	],
+	"license": "SEE LICENSE IN LICENSE",
+	"name": "vscode-insiders-language-pack-ps",
+	"private": false,
 	"publishConfig": {
 		"access": "public"
 	},
-	"icon": "languagepack.png"
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandLocDeprecated.git"
+	},
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
+		"update": "cd ../vscode && npm run update-localization-extension ps"
+	},
+	"type": "module",
+	"version": "0.0.1"
 }
