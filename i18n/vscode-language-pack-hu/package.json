@@ -2,20 +2,9 @@
 	"name": "vscode-language-pack-hu",
 	"displayName": "Hungarian Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Hungarian",
-	"version": "1.48.3",
-	"publisher": "MS-CEINTL",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension hu"
 	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^1.48.0"
-	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
 	"contributes": {
 		"localizations": [
 			{
@@ -351,7 +340,5 @@
 			}
 		]
 	},
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension hu"
-	}
+	"icon": "languagepack.png"
 }
