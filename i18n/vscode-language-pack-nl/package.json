@@ -2,9 +2,20 @@
 	"name": "vscode-language-pack-nl",
 	"displayName": "Dutch Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Dutch",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension nl"
+	"version": "1.48.3",
+	"publisher": "MS-CEINTL",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-loc"
 	},
+	"license": "SEE MIT LICENSE IN LICENSE.md",
+	"engines": {
+		"vscode": "^1.48.0"
+	},
+	"icon": "languagepack.png",
+	"categories": [
+		"Language Packs"
+	],
 	"contributes": {
 		"localizations": [
 			{
@@ -308,5 +319,7 @@
 			}
 		]
 	},
-	"icon": "languagepack.png"
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension nl"
+	}
 }
