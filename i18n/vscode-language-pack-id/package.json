@@ -2,20 +2,9 @@
 	"name": "vscode-language-pack-id",
 	"displayName": "Indonesian Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Indonesian",
-	"version": "1.48.3",
-	"publisher": "MS-CEINTL",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension id"
 	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^1.48.0"
-	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
 	"contributes": {
 		"localizations": [
 			{
@@ -335,7 +324,5 @@
 			}
 		]
 	},
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension id"
-	}
+	"icon": "languagepack.png"
 }
