@@ -35,7 +35,7 @@ Külön köszönet a fordítóknak, akik nélkül nem készülhetett volna el ez
 
 Hungarian Language Pack provides localized UI experience for VS Code.
 
-## Usage
+## 🛠️ Usage
 Once installed, set `"locale": "hu"` in `locale.json` to load Hungarian Language Pack. To modify `locale.json` press `Ctrl+Shift+P` to bring up the **Command Palette**, start typing "config" to filter the list of available commands, then select the **Configure Language** command. See [Docs](https://go.microsoft.com/fwlink/?LinkId=761051) for more information.
 
 ## Contributing
