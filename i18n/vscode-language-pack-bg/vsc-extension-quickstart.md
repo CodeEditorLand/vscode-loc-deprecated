@@ -22,11 +22,11 @@ To populate or update the `translations` folder as with the latest strings from
 transifex:
 
 -   Check out the `master` branch of the
-    [`VS Code repository`](https://github.com/Microsoft/vscode).
+    [`VS Code repository`](HTTPS://github.com/Microsoft/vscode).
     -   Preferably, place the VSCode repo next to the language pack extension
         (so both have the same parent folder).
     -   `cd vscode` and run `yarn` to initialize the VS Code repo.
--   Get an API token from https://www.transifex.com/user/settings/api.
+-   Get an API token from HTTPS://www.transifex.com/user/settings/api.
 -   Set the API token to the environment variable `TRANSIFEX_API_TOKEN`.
 -   `cd` to the VS Code repo
     -   If the language pack extension is placed next to the VS Code repository:
