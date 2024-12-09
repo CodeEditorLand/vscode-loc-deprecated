@@ -334,10 +334,12 @@
 			}
 		]
 	},
+	"dependencies": {},
 	"description": "Language pack extension for Bulgarian.",
+	"devDependencies": {},
 	"displayName": "Bulgarian Language Pack for Visual Studio Code",
 	"icon": "languagepack.png",
-	"name": "vscode-language-pack-bg",
+	"name": "@codeeditorland/language-pack-bg",
 	"scripts": {
 		"update": "cd ../vscode && npm run update-localization-extension bg"
 	}

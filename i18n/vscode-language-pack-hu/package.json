@@ -1,4 +1,10 @@
 {
+	"name": "@codeeditorland/language-pack-hu",
+	"displayName": "Hungarian Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Hungarian",
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension hu"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -334,11 +340,7 @@
 			}
 		]
 	},
-	"description": "Language pack extension for Hungarian",
-	"displayName": "Hungarian Language Pack for Visual Studio Code",
-	"icon": "languagepack.png",
-	"name": "vscode-language-pack-hu",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension hu"
-	}
+	"dependencies": {},
+	"devDependencies": {},
+	"icon": "languagepack.png"
 }

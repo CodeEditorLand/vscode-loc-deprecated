@@ -318,10 +318,12 @@
 			}
 		]
 	},
+	"dependencies": {},
 	"description": "Language pack extension for Indonesian",
+	"devDependencies": {},
 	"displayName": "Indonesian Language Pack for Visual Studio Code",
 	"icon": "languagepack.png",
-	"name": "vscode-language-pack-id",
+	"name": "@codeeditorland/language-pack-id",
 	"scripts": {
 		"update": "cd ../vscode && npm run update-localization-extension id"
 	}

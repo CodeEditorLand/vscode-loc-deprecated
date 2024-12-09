@@ -322,10 +322,12 @@
 			}
 		]
 	},
+	"dependencies": {},
 	"description": "Language pack extension for Ukrainian",
+	"devDependencies": {},
 	"displayName": "Ukrainian Language Pack for Visual Studio Code",
 	"icon": "languagepack.png",
-	"name": "vscode-language-pack-uk",
+	"name": "@codeeditorland/language-pack-uk",
 	"scripts": {
 		"update": "cd ../vscode && npm run update-localization-extension uk"
 	}
