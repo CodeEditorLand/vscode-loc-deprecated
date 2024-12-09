@@ -1,4 +1,10 @@
 {
+	"name": "@codeeditorland/language-pack-bg",
+	"displayName": "Bulgarian Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Bulgarian.",
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension bg"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -335,12 +341,6 @@
 		]
 	},
 	"dependencies": {},
-	"description": "Language pack extension for Bulgarian.",
 	"devDependencies": {},
-	"displayName": "Bulgarian Language Pack for Visual Studio Code",
-	"icon": "languagepack.png",
-	"name": "@codeeditorland/language-pack-bg",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension bg"
-	}
+	"icon": "languagepack.png"
 }

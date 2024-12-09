@@ -1,4 +1,10 @@
 {
+	"name": "@codeeditorland/language-pack-nl",
+	"displayName": "Dutch Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Dutch",
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension nl"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -303,12 +309,6 @@
 		]
 	},
 	"dependencies": {},
-	"description": "Language pack extension for Dutch",
 	"devDependencies": {},
-	"displayName": "Dutch Language Pack for Visual Studio Code",
-	"icon": "languagepack.png",
-	"name": "@codeeditorland/language-pack-nl",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension nl"
-	}
+	"icon": "languagepack.png"
 }
